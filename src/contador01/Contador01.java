@@ -16,11 +16,14 @@ public class Contador01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int cc = 1;
-        while (cc <= 20){
-            
-            System.out.println("Cambalhota " + cc);
+        int cc = 0;
+        while (cc < 10){
             cc++;
+            if (cc == 5 || cc == 7 || cc == 9){
+                continue;
+            }
+            System.out.println("Cambalhota " + cc);
+            
         }
     }
     
